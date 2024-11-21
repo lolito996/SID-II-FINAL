@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ScheduleSubject" directorySegmentName="seg_0" id="1EF813CE-1916-5CD8-429E-A80AE8C1D84A">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>47213C37-E0F7-54CE-6108-1A7C3ADA1C35</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<targetPk>FFBE7790-3FA9-AA0D-AD8C-66FA938BF15E</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>CF87B7D7-B46E-9D5A-29B9-BC515F188DA4</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2693B749-82C9-77FB-069B-BB0A1CCB3E9E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

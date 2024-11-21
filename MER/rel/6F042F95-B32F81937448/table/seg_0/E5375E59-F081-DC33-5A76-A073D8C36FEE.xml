@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5375E59-F081-DC33-5A76-A073D8C36FEE" name="User">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>3DA09653-6B21-2988-30E5-43B0212AEBA8</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B9F6F75D-3E89-75B7-3C9E-56D8B1E434AC">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>0C34FF99-C1A6-6843-8C06-B7C4D76BB9C4</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A4F387A0-CCFF-C38D-D21A-820CA8908382">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>554D86F6-27E1-0FED-F872-0E600A7C43FC</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="identification_number" id="0A9691AF-2ECD-4869-AD9A-4FE3857FA6B4">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>256A6DF3-C54D-C87C-2BEE-72643B023E17</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birthdate" id="DC972A00-7886-8E44-ADF5-F3020A930B83">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>B19617AC-7DDD-2EBC-BF3B-D4C977D3216B</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="D888750C-9321-54E4-A8CB-12CE6D2EB946">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>8E34F888-BED5-0733-F4BB-3D795550E26B</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Course_id" id="AB0BF36E-CFB9-65EB-79AD-9A03CCF6CC01">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>BB531DE5-DFC8-43B6-1597-0C42E98FBE7A</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="829FBFA7-28A8-4D30-FFE3-A690C87719FA" referredColumn="7518397D-D065-5744-B2FF-7055BAB9102D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D7C7295-B35F-A204-DDA1-1FFE3575DBD7" name="User_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>9D2C2ABA-0986-067C-AFC2-3414C084AF4F</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB0BF36E-CFB9-65EB-79AD-9A03CCF6CC01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A95DE34C-B8F0-D7E2-3C4F-B1170052C7AB" name="User_Course_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>4BC1D457-A6D2-8D46-A16B-2B909A111505</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB0BF36E-CFB9-65EB-79AD-9A03CCF6CC01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

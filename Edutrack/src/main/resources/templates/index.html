@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inicio - Edutrack</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header th:replace="fragments/header :: header"></header>
+    
+    <div class="index-container">
+        <h2>Bienvenido a Edutrack</h2>
+        <p>Una plataforma para la gestión educativa.</p>
+
+        <div class="actions">
+            <a th:href="@{/admin/users}" class="btn">Gestión de Usuarios</a>
+            <a th:href="@{/admin/roles}" class="btn">Gestión de Roles</a>
+        </div>
+    </div>
+    <script src="/js/dropdown.js"></script>
+
+</body>
+</html>

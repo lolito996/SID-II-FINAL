@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GradesSubject" directorySegmentName="seg_0" id="9F695901-0B9C-7BB1-A946-1F07594AF50F">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>709F93FF-2122-819D-B5E7-6984A820C790</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<sourcePk>FFBE7790-3FA9-AA0D-AD8C-66FA938BF15E</sourcePk>
+<targetPk>9D307AE8-036F-F130-92AC-6CC7DBC9840A</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2693B749-82C9-77FB-069B-BB0A1CCB3E9E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8CE7D4D1-CB64-C0FA-8A56-55448E3244FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

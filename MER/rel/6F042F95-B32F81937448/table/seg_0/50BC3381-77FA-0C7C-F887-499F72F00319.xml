@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50BC3381-77FA-0C7C-F887-499F72F00319" name="permissions">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>647BBC4D-4C07-E0EA-81AF-1EAEF8189F40</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="description" id="8969454E-A9A7-2838-9468-53C12711532C">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>C91656BC-A1EF-2939-F1A3-10290DA506C4</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A75141B3-9166-716E-DAC4-A70693E8CC03">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>B1B14ED7-4B2A-9F18-81A7-3A4596C15DF2</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="permissions_ID" id="F04DA4ED-19BC-B8D3-D769-1A33564AA987">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB5451E3-1A25-6D5F-6828-8DF9159664CB" name="permissions_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F04DA4ED-19BC-B8D3-D769-1A33564AA987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

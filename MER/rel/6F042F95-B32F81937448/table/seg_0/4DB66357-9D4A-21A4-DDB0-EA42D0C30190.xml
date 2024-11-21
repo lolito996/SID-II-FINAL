@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DB66357-9D4A-21A4-DDB0-EA42D0C30190" name="Schedule">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>CF87B7D7-B46E-9D5A-29B9-BC515F188DA4</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C46EA7FB-0D57-8491-9D6E-0C3D590DE362">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>5B8D411C-83F3-B093-EA3C-A32AD29BD295</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_time" id="68C444E1-128D-9266-D1A2-266794380ABA">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>3F8BA9A5-4178-AA0F-8FDA-F49D92994393</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_time" id="B35122E9-CE4A-C260-6D11-F7810512B137">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>D49CB66C-EE1C-4172-ECDC-6E0EC57D239B</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="classroom" id="6DF78263-B54C-7333-24EE-DF4BEF799E3A">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>9870E113-2A40-689B-66EF-8162CF383C29</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="days" id="4DE97E9B-8748-2919-CC3F-8AC5A5508CB7">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>5D8969F2-67C9-701F-EEF0-9FD11047D616</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Course_id" id="C72ADE32-4BC4-C378-4BF2-019A6ABD5959">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>E1777AAC-A048-80C1-5640-B0556F71AD5A</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AE37D7E-55BC-E4B8-2930-0312E9F46165" referredColumn="7518397D-D065-5744-B2FF-7055BAB9102D"/>
+</associations>
+</Column>
+<Column name="Subject_id" id="6828FFF0-8ABD-BD84-8C51-39577881C642">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>D666436F-2E71-CC2C-ED43-8F42AFADA844</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E70EBF2F-F7DC-DE76-0D9F-9E04DBB7717C" referredColumn="A213537D-1A7D-9729-5C0F-A555714937D4"/>
+</associations>
+</Column>
+<Column name="User_Course_id" id="EEF9199D-C03C-0FE9-9E75-AEB1BB4BE480">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>F60F7E50-1610-1D03-61B8-F3E55162D7D1</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A988824-5CCE-4E14-2EB4-431D3F20BBFB" referredColumn="AB0BF36E-CFB9-65EB-79AD-9A03CCF6CC01"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="247A55B9-2FBC-6D4A-AA77-04A4812EB10A" name="Schedule_Course_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>E5E69FBB-9B9C-F0E0-AE2E-9D170DF92C21</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C72ADE32-4BC4-C378-4BF2-019A6ABD5959"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A2E7425-C602-BB91-3867-2F1E4C1B8B41" name="Schedule_Subject_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>1EF813CE-1916-5CD8-429E-A80AE8C1D84A</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6828FFF0-8ABD-BD84-8C51-39577881C642"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63C400E7-B619-610B-4C56-D650C14C4ECA" name="Schedule_User_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>E173E5CB-A38E-11EA-A7A9-978386937BF9</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEF9199D-C03C-0FE9-9E75-AEB1BB4BE480"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

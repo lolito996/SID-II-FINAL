@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gestión de Roles</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- Fragmento del header -->
+    <th:block th:replace="fragments/header :: header"></th:block>
+
+    <h2 th:text="${title}">Gestión de Roles</h2>
+
+    <!-- Tabla para listar roles -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Rol</th>
+                <th>Permisos</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="role : ${roles}">
+                <td th:text="${role.id}">ID</td>
+                <td th:text="${role.name}">Rol</td>
+                <td>
+                    <!-- Mostrar los permisos asociados a cada rol -->
+                    <ul>
+                        <li th:each="permission : ${role.permissions}" th:text="${permission.name}">Permiso</li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Botón para eliminar un rol -->
+                    <button th:onclick="'window.location.href=\'/admin/roles/delete/' + ${role.id} + '\''">
+                        Eliminar Rol
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para crear o editar roles -->
+    <h3>Crear Rol</h3>
+    <form th:action="@{/admin/roles/create}" method="post">
+        <div>
+            <label for="name">Nombre del Rol</label>
+            <input type="text" id="roleName" name="name" placeholder="Nombre del Rol" required>
+        </div>
+        <button type="submit">Guardar Rol</button>
+    </form>
+
+    <!-- Formulario para asociar permisos a un rol -->
+    <h3>Asociar Permiso a Rol</h3>
+    <form th:action="@{/admin/roles/assign-permission}" method="post">
+        <div>
+            <label for="role">Rol</label>
+            <select id="role" name="roleId" required>
+                <option th:each="role : ${roles}" th:value="${role.id}" th:text="${role.name}">Selecciona un rol</option>
+            </select>
+        </div>
+        <div>
+            <label for="permission">Permiso</label>
+            <select id="permission" name="permissionId" required>
+                <option th:each="permission : ${permissions}" th:value="${permission.id}" th:text="${permission.name}">Selecciona un permiso</option>
+            </select>
+        </div>
+        <button type="submit">Asignar Permiso</button>
+    </form>
+    <script src="/js/dropdown.js"></script>
+</body>
+</html>

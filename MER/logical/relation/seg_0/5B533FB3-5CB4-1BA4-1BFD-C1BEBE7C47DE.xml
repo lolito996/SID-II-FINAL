@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UserGrades" directorySegmentName="seg_0" id="5B533FB3-5CB4-1BA4-1BFD-C1BEBE7C47DE">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>9C69C7EC-4DD6-1359-1D6E-16FA89BEBCDF</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<targetPk>9D2C2ABA-0986-067C-AFC2-3414C084AF4F</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>8CE7D4D1-CB64-C0FA-8A56-55448E3244FF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3DA09653-6B21-2988-30E5-43B0212AEBA8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

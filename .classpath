@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Edutrack/src/main/java"/>
+	<classpathentry excluding="services/impl/" kind="src" path="Edutrack/src/test/java/com/example/demo"/>
+	<classpathentry kind="src" path="Edutrack/src/test/java/com/example/demo/services/impl"/>
+	<classpathentry kind="lib" path="Edutrack/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

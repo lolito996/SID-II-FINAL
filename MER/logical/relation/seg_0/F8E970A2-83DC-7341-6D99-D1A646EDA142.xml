@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RolePermissions" directorySegmentName="seg_0" id="F8E970A2-83DC-7341-6D99-D1A646EDA142">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>ADC794DB-836C-B674-8C24-2206E26ED261</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>17CA071A-4A4E-2C6E-B10E-5FD82C44ABCE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>647BBC4D-4C07-E0EA-81AF-1EAEF8189F40</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

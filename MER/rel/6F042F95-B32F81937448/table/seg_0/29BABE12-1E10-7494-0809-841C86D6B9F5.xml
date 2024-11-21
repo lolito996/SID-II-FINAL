@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29BABE12-1E10-7494-0809-841C86D6B9F5" name="RolePermissions">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Role_Role_ID" id="20C5D1A0-82F0-F7D9-F4A9-2A9A25AECFDE">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92A900C5-1C90-35FC-CE9E-FD1E42BA1990" referredColumn="93A5FC7C-630F-C158-2D5D-08DF9F5797CD"/>
+</associations>
+</Column>
+<Column name="permissions_permissions_ID" id="A66681AD-415F-566A-8D42-12A35155983D">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02F5267D-771D-3F55-9478-292B6ECDB11C" referredColumn="F04DA4ED-19BC-B8D3-D769-1A33564AA987"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B77EF5F-8E5C-540E-0B92-DF0E928FD852" name="RolePermissions_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20C5D1A0-82F0-F7D9-F4A9-2A9A25AECFDE"/>
+<colUsage columnID="A66681AD-415F-566A-8D42-12A35155983D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="472032E3-3EFD-3CF4-940F-5A7E63DDB809" name="RolePermissions_Role_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>F8E970A2-83DC-7341-6D99-D1A646EDA142</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20C5D1A0-82F0-F7D9-F4A9-2A9A25AECFDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3037504B-2491-298D-2C7B-D8CD3D6C16CD" name="RolePermissions_permissions_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>F8E970A2-83DC-7341-6D99-D1A646EDA142</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A66681AD-415F-566A-8D42-12A35155983D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

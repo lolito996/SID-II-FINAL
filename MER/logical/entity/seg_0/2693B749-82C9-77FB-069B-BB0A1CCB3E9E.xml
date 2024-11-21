@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2693B749-82C9-77FB-069B-BB0A1CCB3E9E" name="Subject">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>99D2C08D-80C7-CD2A-EEC5-4BA8F0C47CC8</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="CB6E788B-1D5E-730D-05E2-D6261B31AC45">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>E8DBD35D-52E2-490D-C68B-C62076901983</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="6ADDAFD6-37D0-8AB5-D522-53780B92D67A">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>620FBA7A-328B-AD0B-5843-BEF7A6322106</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="72625B0C-494A-7353-7AE1-D20A32A83C69">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>18C8C50D-D84E-623E-0D5F-DA77ED78513F</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="minimum_passing_grade" id="45C0E073-B4F2-07B0-66AD-A66CAD12197C">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>5CDFBB2C-5488-1287-FF23-F789BF66A059</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name1" id="CCE325CB-9404-A154-0EC8-DB4710FE7173">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<generatorID>9F695901-0B9C-7BB1-A946-1F07594AF50F</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>FF8ED754-EBCD-48F0-AFBC-9B2F46ACC36E</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<referedAttribute>78C4E91B-7B51-376A-F25F-A43DEE44E836</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FFBE7790-3FA9-AA0D-AD8C-66FA938BF15E" name="Subject PK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-28 23:36:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<importedID>F1026490-8F58-24F3-40F8-C5AE936032A0</importedID>
+<engineerTo>
+<item key="6F042F95-D0D2-E420-C311-B32F81937448" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB6E788B-1D5E-730D-05E2-D6261B31AC45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

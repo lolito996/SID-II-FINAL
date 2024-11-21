@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Acceso Denegado</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header th:replace="fragments/header :: header"></header>
+    <div class="error-container">
+        <h2>Acceso Denegado</h2>
+        <p>No tienes permisos para acceder a esta página.</p>
+        <a th:href="@{/}" class="btn">Volver al Inicio</a>
+    </div>
+</body>
+</html>

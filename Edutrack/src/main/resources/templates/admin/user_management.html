@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- Fragmento del header -->
+    <th:block th:replace="fragments/header :: header"></th:block>
+
+    <h2 th:text="${title}">Gestión de Usuarios</h2>
+
+    <!-- Mostrar mensajes de éxito o error -->
+    <div th:if="${success}" class="alert alert-success">
+        <p th:text="${success}"></p>
+    </div>
+    <div th:if="${error}" class="alert alert-danger">
+        <p th:text="${error}"></p>
+    </div>
+
+    <!-- Tabla para listar usuarios -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Username</th>
+                <th>Roles</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}">ID</td>
+                <td th:text="${user.name}">Nombre</td>
+                <td th:text="${user.username}">Username</td>
+                <td>
+                    <!-- Mostrar los roles asociados a cada usuario -->
+                    <ul>
+                        <li th:each="role : ${userRoles.get(user.id)}" th:text="${role.name}">Rol</li>
+                    </ul>
+                </td>
+                <td>
+                    <!-- Formulario para eliminar roles de un usuario -->
+                    <form th:each="role : ${userRoles.get(user.id)}" 
+                          th:action="@{/admin/users/remove-role/{userId}/{roleId}(userId=${user.id},roleId=${role.id})}" 
+                          method="post">
+                        <button type="submit">Eliminar Rol</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario para asociar roles a un usuario -->
+    <h3>Asociar Rol a Usuario</h3>
+    <form th:action="@{/admin/users/assign-role}" method="post">
+        <div>
+            <label for="user">Usuario</label>
+            <select id="user" name="userId" required>
+                <option th:each="user : ${users}" th:value="${user.id}" th:text="${user.name}">Selecciona un usuario</option>
+            </select>
+        </div>
+        <div>
+            <label for="role">Rol</label>
+            <select id="role" name="roleId" required>
+                <option th:each="role : ${allRoles}" th:value="${role.id}" th:text="${role.name}">Selecciona un rol</option>
+            </select>
+        </div>
+        <button type="submit">Asignar Rol</button>
+    </form>
+
+    <script src="/js/dropdown.js"></script>
+</body>
+</html>

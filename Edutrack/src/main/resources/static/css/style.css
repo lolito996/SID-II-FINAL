@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.index-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.index-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.index-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Header y navegación */
+header {
+    background-color: #007bff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #0056b3;
+}
+
+.navbar ul li a#login:hover,
+.navbar ul li a#register:hover {
+    background-color: #ffcc00; /* Color diferente para los botones de iniciar sesión y registrarse */
+}
+
+.nav-link.active {
+    background-color: #0056b3; /* Estilo para el botón activo */
+}
+
+.logo {
+    width: 75px; /* Espacio para el logo */
+    height: auto; /* Altura del logo */
+    display: block; /* Hacer que el logo sea un bloque */
+    border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    margin-left: 20px; /* Empuja el logo a la izquierda */
+}
+
+.dropdown-content {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    background-color: #007bff;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Para asegurarte de que aparezca sobre otros elementos */
+}
+
+.show {
+    display: block; /* Mostrar el menú al hacer clic */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0056b3; /* Cambia el fondo al pasar el ratón */
+}
+
+
+/* Margen para el contenido general de la página */
+main {
+    margin: 20px 40px; /* Añade margen horizontal a los lados */
+}
+
+
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.error-container h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.error-container .btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}

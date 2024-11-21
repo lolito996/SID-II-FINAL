@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9609AC31-68D6-38F5-2497-78B53BF7C00B" name="UserRole">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_Course_id" id="E990C9FD-FE16-9EB7-5DA2-2BBF9837F405">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="063BDE88-C55A-FC75-B9E4-696E7465EAE5" referredColumn="AB0BF36E-CFB9-65EB-79AD-9A03CCF6CC01"/>
+</associations>
+</Column>
+<Column name="Role_Role_ID" id="651024F1-B2E3-7A61-BAD1-BC62EC76568B">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="532321C6-D6F8-D153-620F-CC5AB373AD5B" referredColumn="93A5FC7C-630F-C158-2D5D-08DF9F5797CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2AC2CDE-B06A-47D6-5FE0-F8DD485EB0EE" name="UserRole_PK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E990C9FD-FE16-9EB7-5DA2-2BBF9837F405"/>
+<colUsage columnID="651024F1-B2E3-7A61-BAD1-BC62EC76568B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF45F973-C4EE-8E90-1A8A-9407781626BA" name="UserRole_User_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>C3701653-0472-24D3-DC29-9946398852C4</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E990C9FD-FE16-9EB7-5DA2-2BBF9837F405"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72A7795E-EE5B-6E7D-6321-D74DFB33BD68" name="UserRole_Role_FK">
+<createdBy>alejo</createdBy>
+<createdTime>2024-08-29 00:01:37 UTC</createdTime>
+<generatorID>C3701653-0472-24D3-DC29-9946398852C4</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="651024F1-B2E3-7A61-BAD1-BC62EC76568B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
