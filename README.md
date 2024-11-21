@@ -66,5 +66,3 @@ Funcionalidades Principales:
 Integrantes:
 * David Malte - A00368867
 * Alejandro Muñoz - A00395672
-* Santiago Castillo - A00395559
-* Juan Felipe Plaza - A00365963
